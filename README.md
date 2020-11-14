@@ -1,9 +1,27 @@
-# Testing Conferences
-[![CircleCI](https://circleci.com/gh/TestingConferences/testingconferences.github.io.svg?style=shield)](https://circleci.com/gh/TestingConferences/testingconferences.github.io)
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+# Testing Conferences [![CircleCI](https://circleci.com/gh/TestingConferences/testingconferences.github.io.svg?style=svg)](https://circleci.com/gh/TestingConferences/testingconferences.github.io) [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 This is a simple list of software testing conferences and workshops published collaboratively with the testing community.
 
+## Quick Start
+1. Clone or download the project and cd project dir
+> git clone git@github.com:TestingConferences/testingconferences.github.io.git
+> cd testingconferences.github.io
+
+2. Run using [Docker](https://docs.docker.com/get-docker/)
+
+Build the image: 
+
+> docker build -t tcorg:latest .
+
+Run the container: 
+
+> docker run -d -p 4000:4000 -it --volume="$PWD:/srv/jekyll" tcorg:latest
+
+An alternate option is to use docker-compose:
+
+> docker-compose up
+
+3. Open browser to http://localhost:4000 and start making changes  
 
 ## Contributing Guidelines
 The list of events is driven by files in the ```_data``` folder - if you have an update for those things, just change the ```current.yml``` and ```past.yml``` files and send a PR.
